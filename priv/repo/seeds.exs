@@ -9,3 +9,11 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+alias ZonaBetsApi.Wagers.Transaction
+alias ZonaBetsApi.Wagers.Match
+alias ZonaBetsApi.Accounts.Bettor
+alias ZonaBetsApi.Repo
+
+%Match{description: "Diamond Backs @ Yankees", result: "TBD"} |> Repo.insert!
+%Bettor{name: "IanTest", bank: 10} |> Repo.insert!
+%Transaction{amount: 10, match_id: 1, bettor_id: 1} |> Repo.insert!

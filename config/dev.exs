@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :zona_bets_api, ZonaBetsApi.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "ianharris",
+  password: "",
   hostname: "localhost",
   database: "zona_bets_api_dev",
   stacktrace: true,
